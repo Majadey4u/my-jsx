@@ -1,10 +1,9 @@
-// Price.js
 import React from 'react';
 
-function Price({}) {
+function Price({ price }) { // Define the price prop in the function parameter
   return (
     <div>
-      <p>Price: ${price}</p>
+      <p>Price:{price}</p> {/* Access the price prop */}
     </div>
   );
 }

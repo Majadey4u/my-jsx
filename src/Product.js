@@ -1,9 +1,9 @@
 // product.js
 const Product = {
-  name: 'Product Name',
-  price: '$10',
-  description: 'Product Description',
-  imageUrl: './image.jpg',
+  name: 'Maryjane',
+  price: '$110',
+  description: 'This is a shoe',
+  image: './image.jpg',
 };
 
 export default Product;

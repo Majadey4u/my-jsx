@@ -1,11 +1,12 @@
-// App.js
 import React from 'react';
 import Product from './Product'; // Corrected typo in import statement
 import Name from './Name';
 import Price from './Price';
 import Description from './Description';
+import './App.css'; // Import CSS file
+// Removed Image import
 import Image from './Image.jpg'; // Added semicolon to the end of the import statement
-// import { Container, Card } from 'react-bootstrap';
+import { Container, Card } from 'react-bootstrap';
 
 function App() {
   // Assuming Maryjane is a variable holding the first name
@@ -19,14 +20,15 @@ function App() {
           <Name name={Product.name} />
           <Price price={Product.price} />
           <Description description={Product.description} />
-          <Image imageUrl={Product.imageUrl} />
+
         </Card.Body>
       </Card>
       <div className="mt-3">
         {/* Displaying a greeting with the first name */}
-        <p>Hello, {Maryjane ? `${Maryjane} ${Maryjane}` : 'there'}!</p>
+        <p>Hello, {Maryjane} there!</p>
         {/* Displaying an image if the first name is provided */}
-        {Maryjane && <img src={Image} alt="Profile" />}
+        {/* Removed Image rendering */}
+        {Maryjane && <img src={Image} alt="Profile" width={400} />}
       </div>
     </Container>
   );

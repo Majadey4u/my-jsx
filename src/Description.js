@@ -1,10 +1,10 @@
 // Description.js
 import React from 'react';
 
-function Description({ Clothes }) {
+function Description({}) {
   return (
     <div>
-      <p>{Clothes}</p>
+      <p>This is a shoe {Description} </p>
     </div>
   );
 }
